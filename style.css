@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100svh;
+  background: linear-gradient(135deg, #0061ff, #60efff);
+  color: #fff;
+  padding: 0.75em;
+}
+
+.calculator {
+  width: 85%;
+  max-width: 600px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.calculator h1 {
+  font-size: 3.75rem;
+}
+
+.container h1 span {
+  color: #ffff76;
+}
+
+.input__box {
+  margin: 3em 0;
+  padding: 2.25em;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.input__box input {
+  flex: 1;
+  margin-right: 1.25em;
+  padding: 0.625em 1.25em;
+  border: 0;
+  outline: 0;
+  font-size: 1.125em;
+  border-radius: 5px;
+  position: relative;
+}
+
+.input__box button {
+  background: #ffff76;
+  border: 0;
+  outline: 0;
+  padding: 0.63em 2em;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.input__box input::-webkit-calendar-picker-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100% - 10%);
+  background-size: 2em;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 1.25em;
+}
+
+#result span {
+  color: #ffff76;
+}
+
+.info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .info-socials {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5em;
+  }
+
+  .info-socials a {
+    color: currentColor;
+    padding: 0 0.5em;
+  }
+
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calculator {
+    margin: 0;
+  }
+
+  .calculator h1 {
+    font-size: 2.5rem;
+  }
+}
